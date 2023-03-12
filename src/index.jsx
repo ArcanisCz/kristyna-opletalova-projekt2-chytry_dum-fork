@@ -9,14 +9,15 @@ import house from './images/house.jpg';
 import electricity from './images/electricity.svg';
 import blindsClosed from './images/blinds-closed.svg';
 import blindsOpen from './images/blinds-open.svg';
+import smartHomeData from "./smartHomeData";
+import Header from "./components/Header";
 
 const App = () => (
   <>
-    <div class="container">
+    <div className="container">
+      <Header title="Chytrý dům"/>
+      {/*<Dashboard />*/}
 
-<header class="header">
-  <h1 class="header__title">Chytrý dům</h1>
-</header>
 
 <main class="dashboard">
 
