@@ -1,6 +1,7 @@
-import electricityImg from "../../images/electricity.svg";
-import waterImg from "../../images/water.svg";
+import electricityImg from "./images/electricity.svg";
+import waterImg from "./images/water.svg";
 import React from "react";
+import "./style.css";
 
 const Energy = ({electricity, water}) => {
     return (

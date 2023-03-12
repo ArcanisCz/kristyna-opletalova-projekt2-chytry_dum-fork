@@ -1,6 +1,7 @@
-import lightOff from "../../images/light-off.svg";
-import lightOn from "../../images/light-on.svg";
+import lightOff from "./images/light-off.svg";
+import lightOn from "./images/light-on.svg";
 import React, {useState} from "react";
+import "./style.css";
 
 const Light = ({state, name}) => {
     const [bulb, setBulb] = useState(state);

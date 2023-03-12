@@ -1,7 +1,6 @@
-import lightOff from "../../images/light-off.svg";
-import lightOn from "../../images/light-on.svg";
 import React from "react";
 import Light from "../Light";
+import "./style.css";
 
 const Lights = ({lights}) => {
     return (

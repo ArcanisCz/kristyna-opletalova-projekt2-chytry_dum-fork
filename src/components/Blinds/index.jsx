@@ -1,7 +1,8 @@
-import blindsOpen from "../../images/blinds-open.svg";
-import blindsClosed from "../../images/blinds-closed.svg";
+import blindsOpen from "./images/blinds-open.svg";
+import blindsClosed from "./images/blinds-closed.svg";
 import React, {useState} from "react";
 import {cn} from "../../index";
+import "./style.css";
 
 const Blinds = ({state}) => {
     const [blinds, setBlinds] = useState(state);
