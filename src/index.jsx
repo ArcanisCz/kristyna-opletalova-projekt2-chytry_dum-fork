@@ -5,6 +5,10 @@ import Header from "./components/Header";
 import Dashboard from "./components/Dashboard";
 import smartHomeData from "./smartHomeData";
 
+export function cn(...classes) {
+    const strings = classes.filter(item => typeof item === "string");
+    return strings.join(" ");
+}
 const App = () => (
     <>
         <div className="container">
