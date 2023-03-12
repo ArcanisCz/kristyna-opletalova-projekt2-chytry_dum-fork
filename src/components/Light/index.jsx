@@ -4,16 +4,19 @@ import React, {useState} from "react";
 
 const Light = ({state, name}) => {
     const [bulb, setBulb] = useState(state);
+    const isOn = bulb === 'on';
 
-return (
-    <div className="light" onClick={() => {bulb === 'on' ? setBulb('off') : setBulb('on')}}>
-        <div className="light__icon">
-            <img src={bulb === 'on' ? lightOn : lightOff}/>
+    return (
+        <div className="light" onClick={() => {
+            isOn ? setBulb('off') : setBulb('on')
+        }}>
+            <div className="light__icon">
+                <img src={isOn ? lightOn : lightOff}/>
+            </div>
+            <div className="light__name">
+                {name}
+            </div>
         </div>
-        <div className="light__name">
-            {name}
-        </div>
-    </div>
-)
+    )
 }
 export default Light;
